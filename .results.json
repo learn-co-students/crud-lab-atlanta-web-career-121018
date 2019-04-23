@@ -1,0 +1,509 @@
+{
+  "stats": {
+    "suites": 7,
+    "tests": 25,
+    "passes": 6,
+    "pending": 0,
+    "failures": 19,
+    "start": "2019-04-23T00:08:42.849Z",
+    "end": "2019-04-23T00:08:44.026Z",
+    "duration": 1177
+  },
+  "tests": [
+    {
+      "title": "has an text input field",
+      "fullTitle": "RestaurantInput has an text input field",
+      "duration": 30,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "has an initial state with text key set to empty string",
+      "fullTitle": "RestaurantInput has an initial state with text key set to empty string",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "changes the state on a keydown",
+      "fullTitle": "RestaurantInput changes the state on a keydown",
+      "duration": 6,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "updates the state of the store after submitting the form",
+      "fullTitle": "RestaurantInput updates the state of the store after submitting the form",
+      "duration": 115,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'Hello'",
+        "showDiff": true,
+        "expected": "Hello",
+        "stack": "AssertionError: expected undefined to equal 'Hello'\n    at Context.<anonymous> (test/restaurants-test.js:46:53)"
+      }
+    },
+    {
+      "title": "displays a list of restaurant components",
+      "fullTitle": "Restaurants Component displays a list of restaurant components",
+      "duration": 49,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected {} to have a length of 3 but got 0",
+        "showDiff": true,
+        "actual": "0",
+        "expected": "3",
+        "stack": "AssertionError: expected {} to have a length of 3 but got 0\n    at Context.<anonymous> (test/restaurants-test.js:59:46)"
+      }
+    },
+    {
+      "title": "displays the appropriate text",
+      "fullTitle": "Restaurant Component displays the appropriate text",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read property 'name' of undefined\n    at Restaurant.render (src/components/restaurants/Restaurant.js:13:23)\n    at ReactShallowRenderer._mountClassComponent (node_modules/react-test-renderer/cjs/react-test-renderer-shallow.development.js:809:37)\n    at ReactShallowRenderer.render (node_modules/react-test-renderer/cjs/react-test-renderer-shallow.development.js:738:14)\n    at /Users/RyanRiesenberger/Development/Learn_Labs/04_retake_mod4/09_redux/03_react_redux_cont/07_crud-lab-atlanta-web-career-121018/node_modules/enzyme-adapter-react-16/src/ReactSixteenAdapter.js:549:53\n    at withSetStateAllowed (node_modules/enzyme-adapter-utils/src/Utils.js:99:18)\n    at Object.render (node_modules/enzyme-adapter-react-16/src/ReactSixteenAdapter.js:549:18)\n    at new ShallowWrapper (node_modules/enzyme/build/ShallowWrapper.js:265:22)\n    at shallow (node_modules/enzyme/build/shallow.js:21:10)\n    at Context.<anonymous> (test/restaurants-test.js:66:21)",
+        "message": "Cannot read property 'name' of undefined"
+      }
+    },
+    {
+      "title": "renders an li",
+      "fullTitle": "Restaurant Component renders an li",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read property 'name' of undefined\n    at Restaurant.render (src/components/restaurants/Restaurant.js:13:23)\n    at ReactShallowRenderer._mountClassComponent (node_modules/react-test-renderer/cjs/react-test-renderer-shallow.development.js:809:37)\n    at ReactShallowRenderer.render (node_modules/react-test-renderer/cjs/react-test-renderer-shallow.development.js:738:14)\n    at /Users/RyanRiesenberger/Development/Learn_Labs/04_retake_mod4/09_redux/03_react_redux_cont/07_crud-lab-atlanta-web-career-121018/node_modules/enzyme-adapter-react-16/src/ReactSixteenAdapter.js:549:53\n    at withSetStateAllowed (node_modules/enzyme-adapter-utils/src/Utils.js:99:18)\n    at Object.render (node_modules/enzyme-adapter-react-16/src/ReactSixteenAdapter.js:549:18)\n    at new ShallowWrapper (node_modules/enzyme/build/ShallowWrapper.js:265:22)\n    at shallow (node_modules/enzyme/build/shallow.js:21:10)\n    at Context.<anonymous> (test/restaurants-test.js:72:21)",
+        "message": "Cannot read property 'name' of undefined"
+      }
+    },
+    {
+      "title": "has an unique id property for each element",
+      "fullTitle": "RestaurantInput Component with Redux has an unique id property for each element",
+      "duration": 23,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'Sbarro'",
+        "showDiff": true,
+        "expected": "Sbarro",
+        "stack": "AssertionError: expected undefined to equal 'Sbarro'\n    at Context.<anonymous> (test/restaurants-test.js:93:53)"
+      }
+    },
+    {
+      "title": "has the restaurant as a prop",
+      "fullTitle": "Restaurant Component with Redux has the restaurant as a prop",
+      "duration": 55,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to exist",
+        "showDiff": false,
+        "stack": "AssertionError: expected undefined to exist\n    at Context.<anonymous> (test/restaurants-test.js:113:5)"
+      }
+    },
+    {
+      "title": "has a button that dispatches a DELETE_RESTAURANT action with the proper id when clicked",
+      "fullTitle": "Restaurant Component with Redux has a button that dispatches a DELETE_RESTAURANT action with the proper id when clicked",
+      "duration": 16,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Method “simulate” is meant to be run on 1 node. 0 found instead.\n    at ReactWrapper.single (node_modules/enzyme/build/ReactWrapper.js:1718:17)\n    at ReactWrapper.simulate (node_modules/enzyme/build/ReactWrapper.js:952:21)\n    at Context.<anonymous> (test/restaurants-test.js:127:18)",
+        "message": "Method “simulate” is meant to be run on 1 node. 0 found instead."
+      }
+    },
+    {
+      "title": "updates the state of the store to remove the component",
+      "fullTitle": "Restaurant Component with Redux updates the state of the store to remove the component",
+      "duration": 34,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'Chip Shop'",
+        "showDiff": true,
+        "expected": "Chip Shop",
+        "stack": "AssertionError: expected undefined to equal 'Chip Shop'\n    at Context.<anonymous> (test/restaurants-test.js:156:53)"
+      }
+    },
+    {
+      "title": "displays the ReviewInput component as a child of each Restaurant Component",
+      "fullTitle": "ReviewInput Component displays the ReviewInput component as a child of each Restaurant Component",
+      "duration": 14,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected {} to have a length of 1 but got 0",
+        "showDiff": true,
+        "actual": "0",
+        "expected": "1",
+        "stack": "AssertionError: expected {} to have a length of 1 but got 0\n    at Context.<anonymous> (test/reviews-test.js:25:47)"
+      }
+    },
+    {
+      "title": "has a text input field",
+      "fullTitle": "ReviewInput Component has a text input field",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "has an initial state with text key set to empty string",
+      "fullTitle": "ReviewInput Component has an initial state with text key set to empty string",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "has changes the state on a keydown",
+      "fullTitle": "ReviewInput Component has changes the state on a keydown",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "adds a review to the store when the form is submitted",
+      "fullTitle": "ReviewInput Component adds a review to the store when the form is submitted",
+      "duration": 14,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Method “simulate” is meant to be run on 1 node. 0 found instead.\n    at ReactWrapper.single (node_modules/enzyme/build/ReactWrapper.js:1718:17)\n    at ReactWrapper.simulate (node_modules/enzyme/build/ReactWrapper.js:952:21)\n    at Context.<anonymous> (test/reviews-test.js:55:11)",
+        "message": "Method “simulate” is meant to be run on 1 node. 0 found instead."
+      }
+    },
+    {
+      "title": "updates the state of the store after submitting the form",
+      "fullTitle": "ReviewInput Component updates the state of the store after submitting the form",
+      "duration": 24,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Method “simulate” is meant to be run on 1 node. 0 found instead.\n    at ReactWrapper.single (node_modules/enzyme/build/ReactWrapper.js:1718:17)\n    at ReactWrapper.simulate (node_modules/enzyme/build/ReactWrapper.js:952:21)\n    at Context.<anonymous> (test/reviews-test.js:72:11)",
+        "message": "Method “simulate” is meant to be run on 1 node. 0 found instead."
+      }
+    },
+    {
+      "title": "sets a property of restaurantId on the review component from the parent components id",
+      "fullTitle": "ReviewInput Component sets a property of restaurantId on the review component from the parent components id",
+      "duration": 8,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Method “props” is meant to be run on 1 node. 0 found instead.\n    at ReactWrapper.single (node_modules/enzyme/build/ReactWrapper.js:1718:17)\n    at ReactWrapper.props (node_modules/enzyme/build/ReactWrapper.js:1013:21)\n    at Context.<anonymous> (test/reviews-test.js:86:19)",
+        "message": "Method “props” is meant to be run on 1 node. 0 found instead."
+      }
+    },
+    {
+      "title": "associates the review with the restaurant with a foreign key on the review",
+      "fullTitle": "ReviewInput Component associates the review with the restaurant with a foreign key on the review",
+      "duration": 14,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Method “simulate” is meant to be run on 1 node. 0 found instead.\n    at ReactWrapper.single (node_modules/enzyme/build/ReactWrapper.js:1718:17)\n    at ReactWrapper.simulate (node_modules/enzyme/build/ReactWrapper.js:952:21)\n    at Context.<anonymous> (test/reviews-test.js:98:15)",
+        "message": "Method “simulate” is meant to be run on 1 node. 0 found instead."
+      }
+    },
+    {
+      "title": "is a child of the ReviewsContainer component",
+      "fullTitle": "Reviews Component is a child of the ReviewsContainer component",
+      "duration": 8,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Method “html” is meant to be run on 1 node. 0 found instead.\n    at ReactWrapper.single (node_modules/enzyme/build/ReactWrapper.js:1718:17)\n    at ReactWrapper.html (node_modules/enzyme/build/ReactWrapper.js:897:21)\n    at Context.<anonymous> (test/reviews-test.js:113:43)",
+        "message": "Method “html” is meant to be run on 1 node. 0 found instead."
+      }
+    },
+    {
+      "title": "displays a review for when it is associated with the restaurant",
+      "fullTitle": "Reviews Component displays a review for when it is associated with the restaurant",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read property 'id' of undefined\n    at Context.<anonymous> (test/reviews-test.js:119:24)",
+        "message": "Cannot read property 'id' of undefined"
+      }
+    },
+    {
+      "title": "does not display any review unassociated with the restaurant",
+      "fullTitle": "Reviews Component does not display any review unassociated with the restaurant",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read property 'id' of undefined\n    at Context.<anonymous> (test/reviews-test.js:131:24)",
+        "message": "Cannot read property 'id' of undefined"
+      }
+    },
+    {
+      "title": "has an unique id property that for each element",
+      "fullTitle": "Reviews Component has an unique id property that for each element",
+      "duration": 18,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Method “simulate” is meant to be run on 1 node. 0 found instead.\n    at ReactWrapper.single (node_modules/enzyme/build/ReactWrapper.js:1718:17)\n    at ReactWrapper.simulate (node_modules/enzyme/build/ReactWrapper.js:952:21)\n    at Context.<anonymous> (test/reviews-test.js:148:15)",
+        "message": "Method “simulate” is meant to be run on 1 node. 0 found instead."
+      }
+    },
+    {
+      "title": "has a button that dispatches a DELETE_REVIEW action when clicked",
+      "fullTitle": "Reviews Component has a button that dispatches a DELETE_REVIEW action when clicked",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read property 'id' of undefined\n    at Context.<anonymous> (test/reviews-test.js:162:24)",
+        "message": "Cannot read property 'id' of undefined"
+      }
+    },
+    {
+      "title": "updates the state of the store to remove the component",
+      "fullTitle": "Reviews Component updates the state of the store to remove the component",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read property 'id' of undefined\n    at Context.<anonymous> (test/reviews-test.js:178:24)",
+        "message": "Cannot read property 'id' of undefined"
+      }
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "updates the state of the store after submitting the form",
+      "fullTitle": "RestaurantInput updates the state of the store after submitting the form",
+      "duration": 115,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'Hello'",
+        "showDiff": true,
+        "expected": "Hello",
+        "stack": "AssertionError: expected undefined to equal 'Hello'\n    at Context.<anonymous> (test/restaurants-test.js:46:53)"
+      }
+    },
+    {
+      "title": "displays a list of restaurant components",
+      "fullTitle": "Restaurants Component displays a list of restaurant components",
+      "duration": 49,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected {} to have a length of 3 but got 0",
+        "showDiff": true,
+        "actual": "0",
+        "expected": "3",
+        "stack": "AssertionError: expected {} to have a length of 3 but got 0\n    at Context.<anonymous> (test/restaurants-test.js:59:46)"
+      }
+    },
+    {
+      "title": "displays the appropriate text",
+      "fullTitle": "Restaurant Component displays the appropriate text",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read property 'name' of undefined\n    at Restaurant.render (src/components/restaurants/Restaurant.js:13:23)\n    at ReactShallowRenderer._mountClassComponent (node_modules/react-test-renderer/cjs/react-test-renderer-shallow.development.js:809:37)\n    at ReactShallowRenderer.render (node_modules/react-test-renderer/cjs/react-test-renderer-shallow.development.js:738:14)\n    at /Users/RyanRiesenberger/Development/Learn_Labs/04_retake_mod4/09_redux/03_react_redux_cont/07_crud-lab-atlanta-web-career-121018/node_modules/enzyme-adapter-react-16/src/ReactSixteenAdapter.js:549:53\n    at withSetStateAllowed (node_modules/enzyme-adapter-utils/src/Utils.js:99:18)\n    at Object.render (node_modules/enzyme-adapter-react-16/src/ReactSixteenAdapter.js:549:18)\n    at new ShallowWrapper (node_modules/enzyme/build/ShallowWrapper.js:265:22)\n    at shallow (node_modules/enzyme/build/shallow.js:21:10)\n    at Context.<anonymous> (test/restaurants-test.js:66:21)",
+        "message": "Cannot read property 'name' of undefined"
+      }
+    },
+    {
+      "title": "renders an li",
+      "fullTitle": "Restaurant Component renders an li",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read property 'name' of undefined\n    at Restaurant.render (src/components/restaurants/Restaurant.js:13:23)\n    at ReactShallowRenderer._mountClassComponent (node_modules/react-test-renderer/cjs/react-test-renderer-shallow.development.js:809:37)\n    at ReactShallowRenderer.render (node_modules/react-test-renderer/cjs/react-test-renderer-shallow.development.js:738:14)\n    at /Users/RyanRiesenberger/Development/Learn_Labs/04_retake_mod4/09_redux/03_react_redux_cont/07_crud-lab-atlanta-web-career-121018/node_modules/enzyme-adapter-react-16/src/ReactSixteenAdapter.js:549:53\n    at withSetStateAllowed (node_modules/enzyme-adapter-utils/src/Utils.js:99:18)\n    at Object.render (node_modules/enzyme-adapter-react-16/src/ReactSixteenAdapter.js:549:18)\n    at new ShallowWrapper (node_modules/enzyme/build/ShallowWrapper.js:265:22)\n    at shallow (node_modules/enzyme/build/shallow.js:21:10)\n    at Context.<anonymous> (test/restaurants-test.js:72:21)",
+        "message": "Cannot read property 'name' of undefined"
+      }
+    },
+    {
+      "title": "has an unique id property for each element",
+      "fullTitle": "RestaurantInput Component with Redux has an unique id property for each element",
+      "duration": 23,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'Sbarro'",
+        "showDiff": true,
+        "expected": "Sbarro",
+        "stack": "AssertionError: expected undefined to equal 'Sbarro'\n    at Context.<anonymous> (test/restaurants-test.js:93:53)"
+      }
+    },
+    {
+      "title": "has the restaurant as a prop",
+      "fullTitle": "Restaurant Component with Redux has the restaurant as a prop",
+      "duration": 55,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to exist",
+        "showDiff": false,
+        "stack": "AssertionError: expected undefined to exist\n    at Context.<anonymous> (test/restaurants-test.js:113:5)"
+      }
+    },
+    {
+      "title": "has a button that dispatches a DELETE_RESTAURANT action with the proper id when clicked",
+      "fullTitle": "Restaurant Component with Redux has a button that dispatches a DELETE_RESTAURANT action with the proper id when clicked",
+      "duration": 16,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Method “simulate” is meant to be run on 1 node. 0 found instead.\n    at ReactWrapper.single (node_modules/enzyme/build/ReactWrapper.js:1718:17)\n    at ReactWrapper.simulate (node_modules/enzyme/build/ReactWrapper.js:952:21)\n    at Context.<anonymous> (test/restaurants-test.js:127:18)",
+        "message": "Method “simulate” is meant to be run on 1 node. 0 found instead."
+      }
+    },
+    {
+      "title": "updates the state of the store to remove the component",
+      "fullTitle": "Restaurant Component with Redux updates the state of the store to remove the component",
+      "duration": 34,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected undefined to equal 'Chip Shop'",
+        "showDiff": true,
+        "expected": "Chip Shop",
+        "stack": "AssertionError: expected undefined to equal 'Chip Shop'\n    at Context.<anonymous> (test/restaurants-test.js:156:53)"
+      }
+    },
+    {
+      "title": "displays the ReviewInput component as a child of each Restaurant Component",
+      "fullTitle": "ReviewInput Component displays the ReviewInput component as a child of each Restaurant Component",
+      "duration": 14,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected {} to have a length of 1 but got 0",
+        "showDiff": true,
+        "actual": "0",
+        "expected": "1",
+        "stack": "AssertionError: expected {} to have a length of 1 but got 0\n    at Context.<anonymous> (test/reviews-test.js:25:47)"
+      }
+    },
+    {
+      "title": "adds a review to the store when the form is submitted",
+      "fullTitle": "ReviewInput Component adds a review to the store when the form is submitted",
+      "duration": 14,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Method “simulate” is meant to be run on 1 node. 0 found instead.\n    at ReactWrapper.single (node_modules/enzyme/build/ReactWrapper.js:1718:17)\n    at ReactWrapper.simulate (node_modules/enzyme/build/ReactWrapper.js:952:21)\n    at Context.<anonymous> (test/reviews-test.js:55:11)",
+        "message": "Method “simulate” is meant to be run on 1 node. 0 found instead."
+      }
+    },
+    {
+      "title": "updates the state of the store after submitting the form",
+      "fullTitle": "ReviewInput Component updates the state of the store after submitting the form",
+      "duration": 24,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Method “simulate” is meant to be run on 1 node. 0 found instead.\n    at ReactWrapper.single (node_modules/enzyme/build/ReactWrapper.js:1718:17)\n    at ReactWrapper.simulate (node_modules/enzyme/build/ReactWrapper.js:952:21)\n    at Context.<anonymous> (test/reviews-test.js:72:11)",
+        "message": "Method “simulate” is meant to be run on 1 node. 0 found instead."
+      }
+    },
+    {
+      "title": "sets a property of restaurantId on the review component from the parent components id",
+      "fullTitle": "ReviewInput Component sets a property of restaurantId on the review component from the parent components id",
+      "duration": 8,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Method “props” is meant to be run on 1 node. 0 found instead.\n    at ReactWrapper.single (node_modules/enzyme/build/ReactWrapper.js:1718:17)\n    at ReactWrapper.props (node_modules/enzyme/build/ReactWrapper.js:1013:21)\n    at Context.<anonymous> (test/reviews-test.js:86:19)",
+        "message": "Method “props” is meant to be run on 1 node. 0 found instead."
+      }
+    },
+    {
+      "title": "associates the review with the restaurant with a foreign key on the review",
+      "fullTitle": "ReviewInput Component associates the review with the restaurant with a foreign key on the review",
+      "duration": 14,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Method “simulate” is meant to be run on 1 node. 0 found instead.\n    at ReactWrapper.single (node_modules/enzyme/build/ReactWrapper.js:1718:17)\n    at ReactWrapper.simulate (node_modules/enzyme/build/ReactWrapper.js:952:21)\n    at Context.<anonymous> (test/reviews-test.js:98:15)",
+        "message": "Method “simulate” is meant to be run on 1 node. 0 found instead."
+      }
+    },
+    {
+      "title": "is a child of the ReviewsContainer component",
+      "fullTitle": "Reviews Component is a child of the ReviewsContainer component",
+      "duration": 8,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Method “html” is meant to be run on 1 node. 0 found instead.\n    at ReactWrapper.single (node_modules/enzyme/build/ReactWrapper.js:1718:17)\n    at ReactWrapper.html (node_modules/enzyme/build/ReactWrapper.js:897:21)\n    at Context.<anonymous> (test/reviews-test.js:113:43)",
+        "message": "Method “html” is meant to be run on 1 node. 0 found instead."
+      }
+    },
+    {
+      "title": "displays a review for when it is associated with the restaurant",
+      "fullTitle": "Reviews Component displays a review for when it is associated with the restaurant",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read property 'id' of undefined\n    at Context.<anonymous> (test/reviews-test.js:119:24)",
+        "message": "Cannot read property 'id' of undefined"
+      }
+    },
+    {
+      "title": "does not display any review unassociated with the restaurant",
+      "fullTitle": "Reviews Component does not display any review unassociated with the restaurant",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read property 'id' of undefined\n    at Context.<anonymous> (test/reviews-test.js:131:24)",
+        "message": "Cannot read property 'id' of undefined"
+      }
+    },
+    {
+      "title": "has an unique id property that for each element",
+      "fullTitle": "Reviews Component has an unique id property that for each element",
+      "duration": 18,
+      "currentRetry": 0,
+      "err": {
+        "stack": "Error: Method “simulate” is meant to be run on 1 node. 0 found instead.\n    at ReactWrapper.single (node_modules/enzyme/build/ReactWrapper.js:1718:17)\n    at ReactWrapper.simulate (node_modules/enzyme/build/ReactWrapper.js:952:21)\n    at Context.<anonymous> (test/reviews-test.js:148:15)",
+        "message": "Method “simulate” is meant to be run on 1 node. 0 found instead."
+      }
+    },
+    {
+      "title": "has a button that dispatches a DELETE_REVIEW action when clicked",
+      "fullTitle": "Reviews Component has a button that dispatches a DELETE_REVIEW action when clicked",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read property 'id' of undefined\n    at Context.<anonymous> (test/reviews-test.js:162:24)",
+        "message": "Cannot read property 'id' of undefined"
+      }
+    },
+    {
+      "title": "updates the state of the store to remove the component",
+      "fullTitle": "Reviews Component updates the state of the store to remove the component",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read property 'id' of undefined\n    at Context.<anonymous> (test/reviews-test.js:178:24)",
+        "message": "Cannot read property 'id' of undefined"
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "has an text input field",
+      "fullTitle": "RestaurantInput has an text input field",
+      "duration": 30,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "has an initial state with text key set to empty string",
+      "fullTitle": "RestaurantInput has an initial state with text key set to empty string",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "changes the state on a keydown",
+      "fullTitle": "RestaurantInput changes the state on a keydown",
+      "duration": 6,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "has a text input field",
+      "fullTitle": "ReviewInput Component has a text input field",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "has an initial state with text key set to empty string",
+      "fullTitle": "ReviewInput Component has an initial state with text key set to empty string",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "has changes the state on a keydown",
+      "fullTitle": "ReviewInput Component has changes the state on a keydown",
+      "duration": 2,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
